@@ -2,28 +2,31 @@
 <html>
 <head>
 	<title>From</title>	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
-	<h2>Form Biodata</h2>
-	<form>
-		 <label>NIM : </label>
-		 <input type="text" name="txtnim" size="15" maxlength="10" placeholder="Masukan NIM anda">
-		 <br> 
-		 <label>Nama : </label>
-		 <input type="text" name="txtnama" size="15" placeholder="Masukan Nama Anda">
-		 <br>
-		 <label>Jurusan : </label>
-		 <select name="optjurusan" id="">
-		 	<option value="d3ti">D3TI</option>
-		 	<option value="d3mi">D3MI</option>		 	
-		 </select>
-		 <br>
-		 <label for="">Jenis Kelamin</label>
-		 <input type="radio" value="L" name="rbjk">Laki laki
-		 <input type="radio" value="P" name="rbjk">Perempuan
-		 <br>
-		 <input type="submit" name="Simpan">
-		 <input type="reset" name="BAtal">
-	</form>
+	<div class="container">
+		<h2 class="alert alert-primary">Form Biodata</h2>
+		<form>
+			<label>NIM : </label>
+			<input class="form-control" type="text" name="txtnim" size="15" maxlength="10" placeholder="Masukan NIM anda">
+			<br> 
+			<label>Nama : </label>
+			<input class="form-control" type="text" name="txtnama" size="15" placeholder="Masukan Nama Anda">
+			<br>
+			<label>Jurusan : </label>
+			<select name="optjurusan" id="">
+				<option value="d3ti">D3TI</option>
+				<option value="d3mi">D3MI</option>		 	
+			</select>
+			<br>
+			<label for="">Jenis Kelamin</label>
+			<input type="radio" value="L" name="rbjk">Laki laki
+			<input type="radio" value="P" name="rbjk">Perempuan
+			<br>
+			<input type="submit" name="Simpan"  class="btn btn-primary">
+			<input type="reset" name="Batal" class="btn btn-danger">
+		</form>
+	</div>
 </body>
 </html>
